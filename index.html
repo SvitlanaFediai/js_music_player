@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Admin">
+  <title>Music Playlist on vanilla JS</title>
+  <link rel="icon" href="./img/favicon.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <div class="wrapper">
+    <div class="container">
+      <!-- for orange circle -->
+      <div class="container-circle1">
+        <div class="outer-circle1">
+          <div id="inner-circle1" class="inner-circle1"></div>
+        </div>
+      </div>
+      <!-- for blue circle -->
+      <div class="container-circle2">
+        <div class="outer-circle2">
+          <div id="inner-circle2" class="inner-circle2"></div>
+        </div>
+      </div>
+      <!-- music player starts here -->
+      <div id="music-player" class="music-player">
+        <h2 class="title">Music Player</h2>
+        <div class="rectangle active box">
+          <!-- album logo -->
+          <div id="music-logo" class="music-logo">
+            <i class="fas fa-music"></i>
+          </div>
+          <!-- song name and artist name-->
+          <div id="music-name" class="music-name">Sunflower</div>
+          <div id="music-author" class="music-author">Post Malone</div>
+          <!-- progress bar -->
+          <div class="progress-bar">
+            <div class="current-progress"></div>
+          </div>
+          <!-- song duration -->
+          <div class="music-timer">
+            <span class="current-time">0:00</span>
+            <span class="duration">0:00</span>
+          </div>
+          <!-- player button and controls -->
+          <div id="player-btn" class="player-btn">
+            <button class="btn prev-btn"><i class="fas fa-backward"></i></button>
+            <button class="btn play-btn"><i class="fas fa-play"></i></button>
+            <!-- <button class="btn pause-btn"><i class="fas fa-pause"></i></button>-->
+            <button class="btn next-btn"><i class="fas fa-forward"></i></button>
+            <button class="btn menu-btn"><i class="fa-solid fa-bars"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="./js/main.js"></script>
+</body>
+</html>
